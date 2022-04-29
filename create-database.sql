@@ -1,0 +1,6 @@
+CREATE DATABASE ga;
+
+CREATE USER ga_admin WITH PASSWORD 'password';
+
+GRANT ALL PRIVILEGES ON DATABASE ga TO ga_admin;
+
