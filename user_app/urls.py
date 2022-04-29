@@ -9,6 +9,6 @@ router.register(r'user', UserViewSet)
 urlpatterns = [
     path('', include(router.urls)),
     path('login/', login_view),
-    path('get-csrf-token/', get_csrf_token),
-    path('test/', CheckAuth.as_view())
+    path('get-csrf-token/', get_csrf_token)
 ]
+

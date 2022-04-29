@@ -35,13 +35,3 @@ def login_view(request):
         return JsonResponse({'ok': True})
     else:
         return JsonResponse({'ok': False})
-
-
-from rest_framework import permissions
-from rest_framework.views import APIView
-from rest_framework.authentication import SessionAuthentication
-class CheckAuth(APIView):
-    authentication_classes = [SessionAuthentication]
-    permission_classes = [permissions.IsAuthenticated]
-    def get(self, request):
-        return JsonResponse({'ok': True})
